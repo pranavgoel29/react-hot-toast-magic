@@ -6,7 +6,8 @@ export type ToastType =
   | 'loading'
   | 'blank'
   | 'custom'
-  | 'warn';
+  | 'warn'
+  | 'info';
 export type ToastPosition =
   | 'top-left'
   | 'top-center'

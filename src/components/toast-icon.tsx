@@ -6,6 +6,7 @@ import { ErrorIcon, ErrorTheme } from './error';
 import { LoaderIcon, LoaderTheme } from './loader';
 import { CheckmarkIcon, CheckmarkTheme } from './checkmark';
 import { WarnIcon, WarnTheme } from './warn';
+import { InfoIcon,InfoTheme } from './info';
 
 const StatusWrapper = styled('div')`
   position: absolute;
@@ -44,6 +45,7 @@ export type IconThemes = Partial<{
   error: ErrorTheme;
   loading: LoaderTheme;
   warn: WarnTheme;
+  info: InfoTheme;
 }>;
 
 export const ToastIcon: React.FC<{
@@ -68,6 +70,8 @@ export const ToastIcon: React.FC<{
         return <ErrorIcon {...iconTheme} />;
       case 'warn':
         return <WarnIcon {...iconTheme} />;
+      case 'info':
+        return <InfoIcon {...iconTheme} />;
       default:
         return <CheckmarkIcon {...iconTheme} />;
     }

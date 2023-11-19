@@ -44,7 +44,7 @@ export const InfoIcon = styled('div')<InfoTheme>`
   opacity: 0;
   height: 20px;
   border-radius: 50%;
-  background: ${(p) => p.primary || '#ffd00e'};
+  background: ${(p) => p.primary || '#0e9bff'};
   position: relative;
   animation: ${circleAnimation} 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
     forwards;
@@ -58,7 +58,7 @@ export const InfoIcon = styled('div')<InfoTheme>`
     display: block;
     transform: translateX(-50%);
     left: 50%;
-    border: solid ${(p) => p.secondary || '#000'};
+    border: solid ${(p) => p.secondary || '#f9f9f9'};
     border-width: 0 2px 0 0;
     width: 2px;
     opacity: 0;
