@@ -28,6 +28,22 @@ const examples: Array<{
     },
   },
   {
+    title: 'Warning',
+    emoji: '⚠️',
+    snippet: "toast.warn('Roadblocks ahead')",
+    action: () => {
+      toast.warn('Roadblocks ahead');
+    },
+  },
+  {
+    title: 'Info',
+    emoji: 'ℹ️',
+    snippet: "toast.info('You are on toast')",
+    action: () => {
+      toast.info('You are on toast');
+    },
+  },
+  {
     title: 'Promise',
     emoji: '⏳',
     snippet: `toast.promise(
