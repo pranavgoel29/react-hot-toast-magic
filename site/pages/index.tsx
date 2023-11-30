@@ -3,7 +3,7 @@ import toast, {
   Toaster,
   useToasterStore,
   ToastPosition,
-} from 'react-hot-toast';
+} from 'react-hot-toast-magic';
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
