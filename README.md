@@ -32,7 +32,7 @@
 - 🚀 **Frequent Updates**
 - 🥳 **Additional Toast Types** - _Introducing `info()` and `warn()` for more versatile notifications_
 
-## Installation (Not-out-yet)
+## Installation
 
 #### With yarn
 
