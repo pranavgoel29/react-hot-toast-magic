@@ -2,22 +2,23 @@ import { styled, keyframes } from 'goober';
 
 const triangleAnimation = keyframes`
   from {
-    transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) scale(0);
     opacity: 0;
   }
   to {
-    transform: translateY(-50%) rotate(360deg);
+    transform: translateY(-50%) scale(1);
     opacity: 1;
   }
 `;
 
 const lineAnimation = keyframes`
 from {
-  transform: translateY(-50%) rotate(0deg) scaleY(0);
+  transform: translateY(-50%) scale(0);
   opacity: 0;
+  height: 0;
 }
 to {
-  transform: translateY(-50%) rotate(360deg) scaleY(1);
+  transform: translateY(-50%) scale(1);
   opacity: 1;
   height: 8px;
 }`;

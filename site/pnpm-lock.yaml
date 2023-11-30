@@ -26,6 +26,9 @@ dependencies:
   clsx:
     specifier: ^1.1.1
     version: 1.2.1
+  dotenv:
+    specifier: ^16.3.1
+    version: 16.3.1
   goober:
     specifier: ^2.1.10
     version: 2.1.13(csstype@3.1.2)
@@ -48,8 +51,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-hot-toast-magic:
-    specifier: ^0.0.2
-    version: 0.0.2(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0)
+    specifier: link:../
+    version: link:..
   rehype-slug:
     specifier: ^5.0.1
     version: 5.1.0
@@ -2389,6 +2392,11 @@ packages:
       domhandler: 4.3.1
     dev: false
 
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
+    dev: false
+
   /electron-to-chromium@1.4.597:
     resolution: {integrity: sha512-0XOQNqHhg2YgRVRUrS4M4vWjFCFIP2ETXcXe/0KIQBjXE9Cpy+tgzzYfuq6HGai3hWq0YywtG+5XK8fyG08EjA==}
 
@@ -3713,20 +3721,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
-
-  /react-hot-toast-magic@0.0.2(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-OxvJUr9sj1aVcBA6A+nO30HtRRopx4nRQ5PAC56jCOL/IUjZKRiBqJfFGUWETxuMckYvagS1tNsWOXlmQo5PbA==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
-    dependencies:
-      goober: 2.1.13(csstype@3.1.2)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - csstype
     dev: false
 
   /react@18.2.0:
