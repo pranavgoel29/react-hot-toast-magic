@@ -73,9 +73,9 @@ While `react-hot-toast` has been a fantastic choice for many, the decision to cr
 React Hot Toast Magic introduces additional toast types such as `info()` and `warning()`, providing more options for your notifications.
 
 
-![React Hot Toast Magic - Info Toast](https://github.com/pranavgoel29/react-hot-toast-magic/raw/main/assets/info_toast.png)
+![React Hot Toast Magic - Info Toast](https://github.com/pranavgoel29/react-hot-toast-magic/blob/main/assets/info_toast.png)
 
-![React Hot Toast Magic - Try it out](https://github.com/pranavgoel29/react-hot-toast-magic/raw/main/assets/warning_toast.png)
+![React Hot Toast Magic - Warn Toast](https://github.com/pranavgoel29/react-hot-toast-magic/blob/main/assets/warning_toast.png)
 
 ## Migration from `react-hot-toast`
 
