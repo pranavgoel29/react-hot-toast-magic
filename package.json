@@ -1,7 +1,7 @@
 {
   "name": "react-hot-toast-magic",
   "description": "Smoking hot React Notifications. More functions, increased spiciness, and frequent updates. An extension of [react-hot-toast](https://react-hot-toast.com/).",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Pranav Goel",
   "license": "MIT",
   "repository": {
