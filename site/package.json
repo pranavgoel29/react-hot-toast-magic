@@ -2,10 +2,10 @@
   "name": "site",
   "scripts": {
     "install": "pnpm install",
-    "nodesc": "node setHotToastVersion.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "nodesc": "node setHotToastVersion.js",
   },
   "dependencies": {
     "@mdx-js/loader": "^2.1.2",
