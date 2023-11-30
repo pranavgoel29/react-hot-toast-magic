@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "goober": "^2.1.10",
     "@mdx-js/loader": "^2.1.2",
     "@mdx-js/react": "^2.1.2",
     "@next/mdx": "^12.2.1",
