@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "nodesc": "node setHotToastVersion.js",
+    "nodesc": "node setHotToastVersion.js"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.1.2",
