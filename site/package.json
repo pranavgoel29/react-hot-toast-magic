@@ -1,7 +1,8 @@
 {
   "name": "site",
   "scripts": {
-    "install": "node setHotToastVersion.js pnpm install",
+    "preinstall": "node setHotToastVersion.js",
+    "install": "pnpm install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

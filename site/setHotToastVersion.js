@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 console.log('REACT_HOT_TOAST_MAGIC:', process.env.REACT_HOT_TOAST_MAGIC);
-const version = process.env.REACT_HOT_TOAST_MAGIC || '^0.0.2';
+const version = process.env.REACT_HOT_TOAST_MAGIC || 'latest';
 const packageJsonPath = './package.json';
 
 fs.readFile(packageJsonPath, 'utf8', (err, data) => {
