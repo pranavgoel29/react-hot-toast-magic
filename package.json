@@ -1,10 +1,13 @@
 {
   "name": "react-hot-toast-magic",
-  "description": "Smoking hot React Notifications. More functions, increased spiciness, and frequent updates. An extension of react-hot-toast.",
-  "version": "0.0.1",
+  "description": "Smoking hot React Notifications. More functions, increased spiciness, and frequent updates. An extension of [react-hot-toast](https://react-hot-toast.com/).",
+  "version": "0.0.2",
   "author": "Pranav Goel",
   "license": "MIT",
-  "repository": "pranavgoel29/react-hot-toast-magic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavgoel29/react-hot-toast-magic.git"
+  },
   "keywords": [
     "react",
     "notifications",
@@ -99,5 +102,12 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/pranavgoel29/react-hot-toast-magic/issues"
+  },
+  "homepage": "https://github.com/pranavgoel29/react-hot-toast-magic#readme",
+  "directories": {
+    "test": "test"
   }
 }
