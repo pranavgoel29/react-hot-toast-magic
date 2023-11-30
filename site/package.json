@@ -1,7 +1,6 @@
 {
   "name": "site",
   "scripts": {
-    "install": "pnpm install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
