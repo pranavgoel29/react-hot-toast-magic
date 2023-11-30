@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast-magic';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { Footer } from './sections/footer';

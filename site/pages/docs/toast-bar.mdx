@@ -1,5 +1,5 @@
 import Layout from '../../components/docs-layout';
-import toast from 'react-hot-toast';
+import toast from 'react-hot-toast-magic';
 
 export const meta = {
   title: '<ToastBar/> API',
@@ -7,7 +7,8 @@ export const meta = {
 
 export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
 
-# `<ToastBar />` API
+
+# `<ToastBar/>` API
 
 This is the **default toast component** rendered by the [Toaster](/docs/toaster). You can use this component in a [Toaster](/docs/toaster) with a custom render function to overwrite its defaults.
 
@@ -30,7 +31,7 @@ You can add a **render function to the ToastBar to modify its content**. An obje
 In this example we add a basic dismiss button to all toasts, except if the loading one.
 
 ```jsx
-import { toast, Toaster, ToastBar } from 'react-hot-toast';
+import { toast, Toaster, ToastBar } from 'react-hot-toast-magic';
 
 <Toaster>
   {(t) => (

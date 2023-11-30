@@ -1,5 +1,5 @@
 import Layout from '../../components/docs-layout';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast-magic';
 
 export const meta = {
   title: 'Styling',
@@ -82,7 +82,7 @@ If you want to change the offset of your notifications, you can adapt the absolu
 
 ## Change position of the toaster
 
-By default, the toaster is position fixed in the window. If you want to place it somewhere else, you can ovewrite the position with `containerStyle`.
+By default, the toaster is position fixed in the window. If you want to place it somewhere else, you can overwrite the position with `containerStyle`.
 
 ```jsx
 <Toaster
@@ -94,7 +94,7 @@ By default, the toaster is position fixed in the window. If you want to place it
 
 ## Change offset between toasts
 
-If you want to change the offset between notifications change the gutter.
+If you want to change the offset between notifications, change the gutter.
 
 ```jsx
 <Toaster gutter={24} />
@@ -102,7 +102,7 @@ If you want to change the offset between notifications change the gutter.
 
 ## Change icon color
 
-All icon colors can be changed by supplying a `iconTheme` with a `primary` & `secondary` color.
+All icon colors can be changed by supplying an `iconTheme` with a `primary` & `secondary` color.
 
 ```jsx
 <Toaster
@@ -122,7 +122,7 @@ All icon colors can be changed by supplying a `iconTheme` with a `primary` & `se
 In this example, we provide a render function with the default `<ToastBar />`. We overwrite the animation style based on the current state.
 
 ```jsx
-import { Toaster, ToastBar } from 'react-hot-toast';
+import { Toaster, ToastBar } from 'react-hot-toast-magic';
 
 <Toaster>
   {(t) => (

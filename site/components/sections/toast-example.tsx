@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import toast from 'react-hot-toast';
+import toast from 'react-hot-toast-magic';
 
 import { EmojiButton } from '../emoji-button';
 import { Code } from '../code';

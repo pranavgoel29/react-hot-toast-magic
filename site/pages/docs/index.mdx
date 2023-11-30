@@ -1,5 +1,5 @@
 import Layout from '../../components/docs-layout';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast-magic';
 
 export const meta = {
   title: 'Documentation',
@@ -9,24 +9,23 @@ export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
 
 # Getting Started
 
-Add beautiful notifications to your React app with [react-hot-toast](https://github.com/timolins/react-hot-toast).
+Add beautiful notifications to your React app with [react-hot-toast-magic](https://github.com/pranavgoel29/react-hot-toast-magic).
 
 ### Install with Yarn
 
 ```sh
-yarn add react-hot-toast
+yarn add react-hot-toast-magic
 ```
 
 ### Install with NPM
 
-```sh
-npm install react-hot-toast
+``` sh
+npm install react-hot-toast-magic
 ```
 
 ## Basic usage
-
-```jsx
-import toast, { Toaster } from 'react-hot-toast';
+``` jsx
+import toast, { Toaster } from 'react-hot-toast-magic';
 
 const notify = () => toast('Here is your toast.');
 

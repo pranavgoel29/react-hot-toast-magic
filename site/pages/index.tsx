@@ -55,7 +55,7 @@ const Steps = () => (
       code={
         <code>
           <span className="text-toast-600">yarn add</span>{' '}
-          <span className="text-toast-800">react-hot-toast</span>
+          <span className="text-toast-800">react-hot-toast-magic</span>
         </code>
       }
     ></Step>
@@ -96,6 +96,8 @@ const Features = () => (
     <Feature>Lightweight</Feature>
     <Feature>Pause on hover</Feature>
     <Feature>Headless Hooks</Feature>
+    <Feature>info() and warning() toasts</Feature>
+    <Feature>Extension of `react-hot-toast`</Feature>
   </div>
 );
 
@@ -203,14 +205,14 @@ export default function Home() {
               data-splitbee-event="Open Link"
               data-splitbee-event-target="GitHub"
               onClick={() => {}}
-              href="https://github.com/timolins/react-hot-toast"
+              href="https://github.com/pranavgoel29/react-hot-toast-magic"
             >
               <GitHub className="opacity-100" />
               <span className="flex-1 text-toast-800 text-center">GitHub</span>
             </a>
           </div>
           <div className="text-toast-600 my-2">
-            <Link href="/docs">
+            <Link href="https://react-hot-toast.com/docs">
               <a className="underline">Documentation</a>
             </Link>
             {' · '}

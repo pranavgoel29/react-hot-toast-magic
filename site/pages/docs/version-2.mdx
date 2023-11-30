@@ -1,5 +1,5 @@
 import Layout from '../../components/docs-layout';
-import toast from 'react-hot-toast';
+import toast from 'react-hot-toast-magic';
 
 export const meta = {
   title: 'react-hot-toast 2.0 changes',
@@ -11,26 +11,14 @@ export default ({ children }) => <Layout meta={meta}>{children}</Layout>;
 
 This release is all about **flexibility**. It allows you to create the notification system of your dreams, even simpler. Before we dig deeper into the new APIs, check out what's included in this release:
 
-<div className="">
-<span style={{ margin: '10px' }}>✨</span> <a href="#introducing-toastcustom" className="font-semibold">toast.custom()</a> <span className="">- Dispatch components as toast</span>
-<br />
+✨ [toast.custom()](#introducing-toastcustom) - Dispatch components as toast
+👀 [Reduced-motion support](#better-accessibility) - Automatically adapts to system preference
+🔀 [Individually position toasts](#per-toast-positioning) 
+🧈 [Smoother exit animations](#smoother-exit-animation) 
 
-<span style={{ margin: '10px' }}>👀</span>
-<a href="#better-accessibility" className="font-semibold">Reduced-motion support</a> <span className="">- Automatically adapts to system preference</span>
-<br />
+⚙️ [Custom Renderer API](#custom-renderer-api) - Supply your own render function
 
-<span style={{ margin: '10px' }}>🔀</span>
-<a href="#per-toast-positioning" className="font-semibold">Individually position toasts</a> <span className=""> </span>
-<br />
-
-<span style={{ margin: '10px' }}>🧈</span>
-<a href="#smoother-exit-animation" className="font-semibold">Smoother exit animations</a> <span className=""></span>
-<br />
-
-<span style={{ margin: '10px' }}>⚙️</span> <a href="#custom-renderer-api" className="font-semibold">Custom Renderer API</a> <span className="">- Supply your own render function</span>
-</div>
-
-As well as a many [other improvements and fixes](#changelog).
+As well as many [other improvements and fixes](#changelog).
 
 ## Introducing `toast.custom()`
 
@@ -54,20 +42,6 @@ toast.custom((t) => (
 ));
 ```
 
-<div className="w-full relative">
-  <button
-    onClick={() => 
-      toast.custom((t) => (
-        <div
-          className={`bg-white px-6 py-4 shadow-md rounded-full ${
-            t.visible ? 'animate-enter' : 'animate-leave'
-          }`}
-        >Hello from TailwindCSS! 👋</div>
-      ))
-    }
-    className="bg-toast-800 text-toast-100 whitespace-nowrap py-1 px-3 shadow-md rounded-lg absolute mt-[-4.5rem] -ml-2 transform -translate-x-full left-full">Run Example</button>
-</div>
-
 In the example above, we pass in a **function that returns JSX**. This allows us to access the current toast state and toggle between the enter and exit animation.
 
 Instead of CSS keyframe animations, you can use TailwindCSS classes by wrapping it in the [Transition](https://headlessui.dev/react/transition) component from [@headlessui/react](https://headlessui.dev/).
@@ -82,23 +56,13 @@ The exit animation is now less hectic when you have multiple toasts stacked.
 
 ## Per toast positioning
 
-From now on, it's possible to have toasts at multiple positions at once. Just add the `position` you want as option when dispatching a toast.
+From now on, it's possible to have toasts at multiple positions at once. Just add the `position` you want as an option when dispatching a toast.
 
 ```jsx
 toast.success('Always at the bottom', {
   position: 'bottom-center',
 });
 ```
-
-<div className="w-full relative">
-  <button
-    className="bg-toast-800 text-toast-100 whitespace-nowrap py-1 px-3 shadow-md rounded-lg absolute mt-[-4.5rem] -ml-2 transform -translate-x-full left-full"
-    onClick={() => {
-      toast.success('Always at the bottom', {
-        position: 'bottom-center',
-      });
-    }}>Run Example</button>
-</div>
 
 ## Relative positioning
 
@@ -116,7 +80,7 @@ There is now a `gutter` option to control the gap between toasts.
 <Toaster gutter={30} />
 ```
 
-The offset is now controlled by the Toaster and can be changed by overwriting the `top`, `right`, `bottom` and `left` styles.
+The offset is now controlled by the Toaster and can be changed by overwriting the `top`, `right`, `bottom`, and `left` styles.
 
 ```jsx
 <Toaster containerStyle={{ top: '8px' }} />
@@ -126,9 +90,9 @@ The offset is now controlled by the Toaster and can be changed by overwriting th
 
 You can now use the [`<Toaster/>`](/docs/toaster#using-a-custom-render-function) to render your own components. Pass in a function that receives a [Toast](https://github.com/timolins/react-hot-toast/blob/main/src/core/types.ts#L34) as the first argument, allowing you to render whatever you please.
 
-This is a great alternative if you are using [`useToaster()`](/docs/use-toaster) to render create custom notfications.
+This is a great alternative if you are using [`useToaster()`](/docs/use-toaster) to create custom notifications.
 
-This API allows us to dynamically react to the current state of your toasts. This can be used to **change the default animations**, add **a custom dismiss button** or render a custom notification, like [TailwindUI Notifications](https://tailwindui.com/components/application-ui/overlays/notifications).
+This API allows us to dynamically react to the current state of your toasts. This can be used to **change the default animations**, add **a custom dismiss button**, or render a custom notification, like [TailwindUI Notifications](https://tailwindui.com/components/application-ui/overlays/notifications).
 
 ```jsx
 import { toast, Toaster, ToastBar } from 'react-hot-toast';

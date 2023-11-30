@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import toast, { ToastPosition } from 'react-hot-toast';
+import toast, { ToastPosition } from 'react-hot-toast-magic';
 import Arrow from '../../assets/arrow.svg';
 import { Code } from '../code';
 
