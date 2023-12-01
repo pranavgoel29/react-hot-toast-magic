@@ -5,7 +5,6 @@
 <div align="center">
     <img src="https://badgen.net/npm/v/react-hot-toast-magic" alt="NPM Version" />
     <img src="https://badgen.net/bundlephobia/minzip/react-hot-toast-magic" alt="minzipped size"/>
-    <img src="https://github.com/pranavgoel29/react-hot-toast-magic/workflows/CI/badge.svg" alt="Build Status" />
 </div>
 <br />
 <div align="center"><strong>Spicy and Enhanced Notifications for React (Extension of react-hot-toast).</strong></div>
