@@ -1,25 +1,4 @@
-# React Hot Toast Magic
-
-[![React Hot Toast Magic - Try it out](https://github.com/pranavgoel29/react-hot-toast-magic/raw/main/assets/header.svg)](https://github.com/pranavgoel29/react-hot-toast-magic)
-
-<div align="center">
-    <img src="https://badgen.net/npm/v/react-hot-toast-magic" alt="NPM Version" />
-    <img src="https://badgen.net/bundlephobia/minzip/react-hot-toast-magic" alt="minzipped size"/>
-</div>
-<br />
-<div align="center"><strong>Spicy and Enhanced Notifications for React (Extension of react-hot-toast).</strong></div>
-<div align="center"> More functions, more spiciness, and frequent updates.</div>
-<br />
-<div align="center">
-<a href="https://twitter.com/Pranavgoel_29">Twitter</a>
-</div>
-
-<br />
-<div align="center">
-  <sub>Cooked by <a href="https://twitter.com/Pranavgoel_29">Pranav Goel</a> 👨‍🍳</sub>
-</div>
-
-<br />
+# Fork of React Hot Toast by Timo Lins
 
 ## Features
 
